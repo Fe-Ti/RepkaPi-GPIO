@@ -91,7 +91,7 @@ const char* FUNCTIONS[] = {
 };
 
 const char* BOARDS[] = {
-  "","Repka Pi 3"
+  "","Repka Pi 3","Repka Pi 4" 
 };
 
 /* Get Alt Function Name */
