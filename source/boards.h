@@ -24,6 +24,6 @@ extern const int pin_to_gpio_repkapi3[41];
 extern const int pin_to_gpio_repkapi4[41];
 
 extern const char* FUNCTIONS[41];
-extern const char* BOARDS[2];
+extern const char* BOARDS[3];
 
 int gpio_function_name(int gpio, int func, int board);
