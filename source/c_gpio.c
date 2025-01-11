@@ -27,7 +27,7 @@ SOFTWARE.
 #include <sys/mman.h>
 #include "c_gpio.h"
 
-static volatile uint32_t *gpio_map[2];
+static volatile uint32_t *gpio_map[3];
 
 
 uint32_t readl(uint32_t addr, int chip)
