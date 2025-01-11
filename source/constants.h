@@ -23,24 +23,25 @@ SOFTWARE.
 #define PY_PUD_CONST_OFFSET 20
 #define PY_EVENT_CONST_OFFSET 30
 
-PyObject *high;
-PyObject *low;
-PyObject *input;
-PyObject *output;
-PyObject *pud_off;
-PyObject *pud_up;
-PyObject *pud_down;
-PyObject *rising_edge;
-PyObject *falling_edge;
-PyObject *both_edge;
-PyObject *unknown;
-PyObject *board;
-PyObject *bcm;
-PyObject *soc;
-PyObject *sysfs;
-PyObject *version;
-PyObject *bunknown;
-PyObject *brepkapi3;
+extern PyObject *high;
+extern PyObject *low;
+extern PyObject *input;
+extern PyObject *output;
+extern PyObject *pud_off;
+extern PyObject *pud_up;
+extern PyObject *pud_down;
+extern PyObject *rising_edge;
+extern PyObject *falling_edge;
+extern PyObject *both_edge;
+extern PyObject *unknown;
+extern PyObject *board;
+extern PyObject *bcm;
+extern PyObject *soc;
+extern PyObject *sysfs;
+extern PyObject *version;
+extern PyObject *bunknown;
+extern PyObject *brepkapi3;
+extern PyObject *brepkapi4;
 
 
 void define_constants(PyObject *module);

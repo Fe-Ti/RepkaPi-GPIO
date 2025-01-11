@@ -26,6 +26,26 @@ SOFTWARE.
 #include "c_gpio.h"
 #include "event_gpio.h"
 
+PyObject *high;
+PyObject *low;
+PyObject *input;
+PyObject *output;
+PyObject *pud_off;
+PyObject *pud_up;
+PyObject *pud_down;
+PyObject *rising_edge;
+PyObject *falling_edge;
+PyObject *both_edge;
+PyObject *unknown;
+PyObject *board;
+PyObject *bcm;
+PyObject *soc;
+PyObject *sysfs;
+PyObject *version;
+PyObject *bunknown;
+PyObject *brepkapi3;
+PyObject *brepkapi4;
+
 void define_constants(PyObject *module)
 {
 	high = Py_BuildValue("i", HIGH);
@@ -76,6 +96,8 @@ void define_constants(PyObject *module)
 	brepkapi3 = Py_BuildValue("i", REPKAPI3);
 	PyModule_AddObject(module, "REPKAPI3", brepkapi3);
 
+	brepkapi4 = Py_BuildValue("i", REPKAPI4);
+	PyModule_AddObject(module, "REPKAPI4", brepkapi4);
 
 	version = Py_BuildValue("s", "0.1.0");
 	PyModule_AddObject(module, "VERSION", version);

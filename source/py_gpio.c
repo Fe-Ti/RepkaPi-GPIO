@@ -83,7 +83,7 @@ static PyObject *py_setrpi(PyObject *self, PyObject *args)
     return NULL;
   }
 
-  if (board_type < REPKAPI3)
+  if (board_type < REPKAPI3 || board_type > REPKAPI4)
   {
     PyErr_SetString(PyExc_ValueError, "Передана не верная модель платы в setboard() / An invalid board was passed to setboard()");
     return NULL;
@@ -92,6 +92,7 @@ static PyObject *py_setrpi(PyObject *self, PyObject *args)
   //here is the 'pin_to_gpio' initialization
   switch (board_type) {
     case 1 :pin_to_gpio = &pin_to_gpio_repkapi3; break;
+    case 2 :pin_to_gpio = &pin_to_gpio_repkapi4; break;
   }
 
   Py_RETURN_NONE;
